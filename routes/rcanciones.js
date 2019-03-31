@@ -151,7 +151,8 @@ module.exports = function(app, swig, gestorBD) {
                     {
                         cancion : canciones[0]
                     });
-                res.send(respuesta);
+                //res.send(respuesta);
+                res.redirect("/publicaciones");
             }
         });
     });
