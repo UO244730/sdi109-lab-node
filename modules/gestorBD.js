@@ -64,11 +64,12 @@ module.exports = {
           if(err){
               funcionCallback(null);
           }else{
-              var collection = db.colletion('canciones');
+              var collection = db.collection('canciones');
               collection.remove(criterio, function(err, result){
                   if(err){
                       funcionCallback(null);
                   }else{
+                      console.log(result);
                       funcionCallback(result);
                   }
                   db.close();
